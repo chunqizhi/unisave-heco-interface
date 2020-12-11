@@ -1,4 +1,4 @@
-import { Currency, ETHER, ChainId } from '@lychees/uniscam-sdk'
+import { Currency, ETHER, ChainId } from '@unisave/unisave-heco-sdk'
 
 export const formatSymbol = (currency?: Currency | null, chainId: ChainId = ChainId.MAINNET) => {
   if (!currency) return ''

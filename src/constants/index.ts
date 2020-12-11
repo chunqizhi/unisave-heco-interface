@@ -1,9 +1,9 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@lychees/uniscam-sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@unisave/unisave-heco-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = '0x039B5818e51dfEC86c1D56A4668787AF0Ed1c068'
+export const ROUTER_ADDRESS = '0x8C03Cd45861a53b03921694cD1ff78874Bbd8B96'
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
@@ -44,6 +44,13 @@ export const UNI: { [chainId in ChainId]: Token } = {
     '0x12e2fcfA079Fc23aE82Ab82707b402410321103f',
     18,
     'BEST',
+    'Unisave'
+  ),
+  [ChainId.HECO_TESTNET]: new Token(
+    ChainId.HECO_TESTNET,
+    '0xbbEeF58A63aeb9D5BC5e5792A20B81e0DE83fD14',
+    10,
+    'HT',
     'Unisave'
   )
 }
@@ -104,7 +111,8 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.GÖRLI]: [WETH[ChainId.GÖRLI]],
   [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
   [ChainId.BSC_MAINNET]: [WETH[ChainId.BSC_MAINNET]],
-  [ChainId.BSC_TESTNET]: [WETH[ChainId.BSC_TESTNET]]
+  [ChainId.BSC_TESTNET]: [WETH[ChainId.BSC_TESTNET]],
+  [ChainId.HECO_TESTNET]: [WETH[ChainId.HECO_TESTNET]]
 }
 
 // used to construct intermediary pairs for trading

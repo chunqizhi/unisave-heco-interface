@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@lychees/uniscam-sdk'
+import { Currency, ETHER, Token } from '@unisave/unisave-heco-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'CURRENCY'

@@ -8,7 +8,7 @@ import {
   Percent,
   Price,
   TokenAmount
-} from '@lychees/uniscam-sdk'
+} from '@unisave/unisave-heco-sdk'
 import { useCallback, useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'

@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@lychees/uniscam-sdk'
+import { ChainId, Token } from '@unisave/unisave-heco-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
@@ -38,7 +38,8 @@ const EMPTY_LIST: TokenAddressMap = {
   [ChainId.GÖRLI]: {},
   [ChainId.MAINNET]: {},
   [ChainId.BSC_MAINNET]: {},
-  [ChainId.BSC_TESTNET]: {}
+  [ChainId.BSC_TESTNET]: {},
+  [ChainId.HECO_TESTNET]: {}
 }
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =

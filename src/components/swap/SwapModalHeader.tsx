@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@lychees/uniscam-sdk'
+import { Trade, TradeType } from '@unisave/unisave-heco-sdk'
 import React, { useContext, useMemo } from 'react'
 import { ArrowDown, AlertTriangle } from 'react-feather'
 import { Text } from 'rebass'

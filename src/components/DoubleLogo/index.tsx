@@ -1,4 +1,4 @@
-import { Currency } from '@lychees/uniscam-sdk'
+import { Currency } from '@unisave/unisave-heco-sdk'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

@@ -1,4 +1,4 @@
-import { ChainId } from '@lychees/uniscam-sdk'
+import { ChainId } from '@unisave/unisave-heco-sdk'
 import useNetworkType from './useNetworkType'
 
 export const useMiningLink = (chainId?: ChainId): string => {
