@@ -3,7 +3,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = '0x8C03Cd45861a53b03921694cD1ff78874Bbd8B96'
+export const ROUTER_ADDRESS = '0x4B462DD0EC51dff30f02B806B625D097693265f2'
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
@@ -52,6 +52,13 @@ export const UNI: { [chainId in ChainId]: Token } = {
     10,
     'HT',
     'Unisave'
+  ),
+  [ChainId.HECO_MAINNET]: new Token(
+    ChainId.HECO_MAINNET,
+    '0x95303075f8d020db60344abfef5bd5891302b1ab',
+    18,
+    'BB',
+    'Uniswap'
   )
 }
 
@@ -112,7 +119,8 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
   [ChainId.BSC_MAINNET]: [WETH[ChainId.BSC_MAINNET]],
   [ChainId.BSC_TESTNET]: [WETH[ChainId.BSC_TESTNET]],
-  [ChainId.HECO_TESTNET]: [WETH[ChainId.HECO_TESTNET]]
+  [ChainId.HECO_TESTNET]: [WETH[ChainId.HECO_TESTNET]],
+  [ChainId.HECO_MAINNET]: [WETH[ChainId.HECO_MAINNET]]
 }
 
 // used to construct intermediary pairs for trading
@@ -138,7 +146,8 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, USDC, USDT],
   [ChainId.BSC_MAINNET]: [...WETH_ONLY[ChainId.BSC_MAINNET], B_USDT, BUSD, B_DAI],
   [ChainId.BSC_TESTNET]: [...WETH_ONLY[ChainId.BSC_TESTNET], T_USDT, T_BUSD, T_DAI],
-  [ChainId.HECO_TESTNET]: [...WETH_ONLY[ChainId.HECO_TESTNET]]
+  [ChainId.HECO_TESTNET]: [...WETH_ONLY[ChainId.HECO_TESTNET]],
+  [ChainId.HECO_MAINNET]: [...WETH_ONLY[ChainId.HECO_MAINNET]]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
